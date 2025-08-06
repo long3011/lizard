@@ -1,4 +1,7 @@
+let count=0;
 function releaseLizard() {
+        count++;
+        document.getElementById('counter').textContent = `${count}`;
         const lizardSound=new Audio('lizard.mp3')
         lizardSound.currentTime=0.3;
         lizardSound.play()
